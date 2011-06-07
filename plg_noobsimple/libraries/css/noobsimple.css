@@ -1,0 +1,19 @@
+.noob_simple_mask div {
+	position:absolute;
+}
+.noob_simple_mask div span{
+	display:block;
+	float:left;
+}
+
+.noob_simple_mask {
+	position:relative;
+	width:312px;
+	height:69px;
+	overflow:hidden;
+}
+
+.noob_simple_mask div span img{
+	display:block;
+	border:none;
+}

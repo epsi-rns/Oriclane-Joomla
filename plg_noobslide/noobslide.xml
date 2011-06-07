@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="content" method="upgrade">
+	<name>Mootools - Noob Slider - Picasa/ Album</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2009 11 01</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.2.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[
+	<p>noobSlide for Mootools 1.3.</p>
+	<p>There is two mode used in this plugin:</p>
+	<ul>
+		<li>picasa album and</li>
+		<li>javascript files that hold photo array.
+		<br/>sample javascript included in /media/user/js/</li>
+	</ul>
+	<p>For each mode you can put title and subtitle.</p>
+	<p>Here is sample for each mode:</p>
+	<ul>
+		<li>Files<br/>
+		{noobslide source="data.welcome.js"}
+		</li>
+		<li>Picasa<br/>
+		{noobslide picasa_user="iluni.pusat" picasa_album="GempaSumatraBarat"<br/>
+		title="Gempa Sumatra Barat" subtitle="&lt;strong&gt;Sumber&lt;/strong&gt;: Aswil Nazir, 3 Oktober 2009"}
+		</li>		
+	</ul>
+	<p>You might want to choose lightbox from plugin parameter.</p>
+]]></description>			
+
+	<files>
+		<filename plugin="noobslide">noobslide.php</filename>
+		<filename plugin="noobslide">noobslide.tmpl.php</filename>
+	</files>
+
+	<media>  
+		<filename>libraries/js/mooclass.gpw.js</filename>
+		<filename>libraries/js/moohelper.noob.js</filename>
+		<filename>libraries/css/noob.css</filename>
+		<filename>libraries/images/go-down.png</filename>
+		<filename>libraries/images/go-up.png</filename>
+		<filename>libraries/images/spinner.gif</filename>
+		<filename>libraries/images/silk/control_end_blue.png</filename>
+		<filename>libraries/images/silk/control_play_blue.png</filename>
+		<filename>libraries/images/silk/control_playback_blue.png</filename>
+		<filename>libraries/images/silk/control_start_blue.png</filename>
+		<filename>libraries/images/silk/control_stop_blue.png</filename>
+		<!-- sample -->
+		<filename>user/js/data.addnl-sites.js</filename>
+		<filename>user/js/data.welcome.js</filename>
+	</media>  		
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="lightbox_type" type="radio" default="0" 
+					label="Use Lightbox Clone" description="Select Lightbox Clone Type">
+					<option value="0">Disable</option>
+					<option value="1">Slimbox</option>
+					<option value="2">MediaboxAdv</option>
+				</field>	
+			</fieldset>
+		</fields>
+	</config>		
+</extension>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="1.6.0" client ="site" method="upgrade">
+    <name>Simple Contact</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2008 09 05</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www.citrajaya.net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->
+		<description><![CDATA[
+	This simple module show <strong>contact details</strong> in frontpage.
+	For use with bottom position in oriclone template.	
+]]></description>
+
+     <files>
+        <filename module="mod_simplecontact">mod_simplecontact.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/simplecontact.css</filename>
+		<!-- accessories -->
+		<folder>assets/images</folder>
+     </files>
+	
+	<languages folder="lang">
+		<language tag="en-GB">en-GB.mod_simplecontact.ini</language>
+		<language tag="in-ID">in-ID.mod_simplecontact.ini</language>
+	</languages>
+	
+	<config>
+	<fields name="params">
+	<fieldset name="basic">
+		<field name="company" type="text" default="Sekretariat ILUNI UI" 
+		label="Company" description="Type your company, eg. iluni " />
+		<field name="address" type="textarea" 
+		default="Jl. Salemba Raya 4, Jakarta Pusat 10430"
+		label="Address"
+		description="Type your address description."
+		rows="3" cols="35" />
+		<field name="phone" type="text" default=""
+		label="Phone" description="Type your phone or leave it blank." />
+		<field name="hotline" type="text" default="" 
+		label="Hotline" description="Type your hotline phone or leave it blank." />
+		<field name="fax" type="text" default="" 
+		label="Faximile" description="Type your fax or leave it blank." />
+		<field name="email" type="text" default="" 
+		label="E-mail" description="Type your email or leave it blank." />
+	</fieldset>
+	</fields>
+	</config>
+</extension>

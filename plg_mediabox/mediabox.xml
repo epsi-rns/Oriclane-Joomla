@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="content" method="upgrade">
+	<name>Mootools - Mediabox</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2009 10 3</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->	
+	<description><![CDATA[
+	<p>Media Box Advance for Mootools 1.3.</p>
+	<p>This will activate required javascript each you write {mediabox} in your article.</p>
+	<p>Simply write down your lightbox rel tag. No need to write any parameter in your plugin</p>
+	<p>You can find mediaboxAdvanced's documentation at <a href="http://iaian7.com">iaian7.com</a>.</p>
+]]></description>
+
+	<files>
+		<filename plugin="mediabox">mediabox.php</filename>
+	</files>
+	<media destination="libraries">  
+		<folder>mediabox</folder>	
+	</media>  	
+</extension>

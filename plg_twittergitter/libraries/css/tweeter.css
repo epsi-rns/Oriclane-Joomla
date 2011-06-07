@@ -1,0 +1,28 @@
+#tweets-here	{ margin:20px 0 0 0; font-size:13px;}
+.tweet	{ padding:5px 10px; min-height:48px; margin:5px 0; background:#eee; }
+.tweet img	{ margin-right:10px; height:48px; width: height:48px;}
+.tweet strong	{ color:navy; }
+.tweet span	{ font-size:11px; color:#666; }
+#lay_top .tweet { background:transparent; }
+
+.tweet {
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px; 
+	border-radius:5px; 
+	
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left : 3px solid #dd6;
+	border-right : 3px solid #dd6;	
+	
+	background: #eaeaea url(../images/shade.gif) repeat-x top;	
+}	
+.tweet:hover {
+	-moz-box-shadow: #888 3px 3px 1px;
+	-webkit-box-shadow: #888 3px 3px 1px;
+	box-shadow: 3px 3px 1px #888;
+}
+
+.tweet:hover strong {
+	text-shadow: 10px 10px 5px #888;
+}

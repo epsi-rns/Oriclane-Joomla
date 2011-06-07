@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="content" method="upgrade">
+	<name>Content - Home</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2011 05 25</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[
+	<p>Solving relative path problems. This is silly. No need to use this in Joomla.</p>
+]]></description>			
+
+	<files>
+		<filename plugin="home">home.php</filename>
+	</files>
+</extension>

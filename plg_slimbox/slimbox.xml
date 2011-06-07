@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Mootools - Slimbox (modified)</name>
+	<author>AmyStephen</author>
+	<creationDate>February 2008</creationDate>
+	<copyright>(C) 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>This Joomla! plugin is licensed GNU/GPL http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL. Slimbox is free software released under MIT License. http://www.opensource.org/licenses/mit-license.php</license>
+	<authorEmail>AmyStephen@OpenSourceCommunity.org</authorEmail>
+	<authorUrl>OpenSourceCommunity.org</authorUrl>
+	<version>1.01</version>
+	<description>SLIMBOXDESCINPLUGIN</description>	
+
+	<files>
+		<filename plugin="slimbox">slimbox.php</filename>
+	</files>
+	<media destination="libraries">  
+		<folder>slimbox</folder>	
+	</media>   	
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_slimbox.ini</language>
+	</languages>
+	<params>
+		<param name="framework" type="list" default="moo11" 
+		label="Framework Compatibility" 
+		description="Choose your favorite framework!">
+			    <option value="moo11">Mootools 1.11</option>
+			    <option value="moo12">Mootools 1.22</option>
+			    <option value="jquery">JQuery 1.2.6</option>
+		</param>	
+	</params>
+</install>

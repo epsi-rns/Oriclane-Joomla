@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>COM_ORICLAN</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2011 05 31</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>COM_ORICLAN_DESCRIPTION</description>
+ 
+	<!-- Runs on install/uninstall/update; New in 1.6 -->
+	<scriptfile>install.php</scriptfile>
+ 
+	<administration>
+		<!-- Administration Menu Section -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+		</files>
+ 
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_oriclan.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_oriclan.sys.ini</language>
+		</languages>
+	</administration> 
+ 
+	<modules>
+		<module module="mod_fisheye_dockmenu"
+				name="Fish Eye - Dock Menu Module" />
+		<module module="mod_pluginwrapper"
+				name="Universal Plugin Wrapper Module" />
+		<module module="mod_sidebar"
+				name="Mootools - Side Bar Module" />
+		<module module="mod_simplecontact"
+				name="Simple Contact Module" />
+	</modules>
+
+	<plugins>
+		 <plugin group="system" plugin="plg_sharedassets"
+				name="Mootools - Shared Assets" />
+		 <plugin group="content" plugin="plg_message"
+				name="Content - Message" />
+		 <plugin group="content" plugin="plg_addtoany"
+				name="Content - AddToAny" />				
+		 <plugin group="content" plugin="plg_google_presentation"
+				name="Content - Google Presentation" />
+		 <plugin group="content" plugin="plg_linkbutton"
+				name="Content - Link Button" />				
+		 <plugin group="content" plugin="plg_kwicks"
+				name="Mootools - Kwicks Menu" />
+		 <plugin group="content" plugin="plg_mediabox"
+				name="Mootools - Mediabox" />
+		 <plugin group="content" plugin="plg_noobsimple"
+				name="Mootools - Noob Slider - Simply Horizontal" />
+		 <plugin group="content" plugin="plg_noobslide"
+				name="Mootools - Noob Slider - Picasa/ Album" />
+		 <plugin group="content" plugin="plg_simpleslideshow"
+				name="Mootools - Simple Slide Show" />
+		 <plugin group="content" plugin="plg_twittergitter"
+				name="Mootools - Twitter Gitter" />
+		 <plugin group="content" plugin="plg_accordion"
+				name="Mootools - Accordion" />
+	</plugins>
+	    
+</extension>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="system" method="upgrade">
+	<name>Mootools - Shared Assets</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2009 10 31</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->	
+	<description><![CDATA[
+	<p>Contain javascript that some other extension might depend.</p>
+	<p>This will prepare shared assets libraries in media folder and create appropriate behavior.</p>
+]]></description>		
+
+	<files>
+		<filename plugin="sharedassets">sharedassets.php</filename>
+		<filename>html/index.html</filename>
+		<filename>html/moolib.php</filename>
+	</files>
+	<media>  
+		<filename>libraries/index.html</filename>
+		<filename>libraries/js/index.html</filename>
+		<filename>libraries/images/index.html</filename>
+		<filename>libraries/css/index.html</filename>	
+		<filename>user/index.html</filename>
+		<filename>user/js/index.html</filename>
+		<filename>user/images/index.html</filename>
+		<filename>user/css/index.html</filename>
+		<filename>libraries/js/mooclass.noobSlide.js</filename>
+		<filename>libraries/js/mooclass.noobSlide.packed.js</filename>
+		<filename>libraries/js/mooclass.reflection.js</filename>
+	</media>  
+</extension>

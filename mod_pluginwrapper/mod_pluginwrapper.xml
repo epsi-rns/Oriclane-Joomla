@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="1.6.0" client ="site" method="upgrade">
+    <name>Universal Plugin Wrapper</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2009 10 3</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->	
+	<description><![CDATA[
+	<p>The title is self explanatory.</p>
+]]></description>
+	
+    <files>
+        <filename module="mod_pluginwrapper">mod_pluginwrapper.php</filename>
+        <filename>index.html</filename>
+    </files>     
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="plugintext" type="textarea" filter="raw" 
+					default="&lt;br/&gt;{}" 
+					label="Enter plugin content"
+					description="sample {mediabox}" rows="10" cols="40" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

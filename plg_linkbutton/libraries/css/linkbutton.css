@@ -1,0 +1,28 @@
+
+/* download */
+
+span.file-button {
+	padding: 2px 0px 2px 20px;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+span.file_attach {
+	background-image: url(../images/silk/attach.png);
+}
+
+span.file_compressed {
+	background-image: url(../images/silk/page_white_compressed.png);
+}
+
+span.file_excel {
+	background-image: url(../images/silk/page_white_excel.png);
+}
+
+span.file_word {
+	background-image: url(../images/silk/page_white_word.png);
+}
+
+span.file_powerpoint {
+	background-image: url(../images/silk/page_white_powerpoint.png);
+}

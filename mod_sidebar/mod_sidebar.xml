@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="1.6.0" client ="site" method="upgrade">
+    <name>Mootools - Side Bar</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2009 12 19</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->	
+	<description><![CDATA[
+	<p>This scroll sidebar navigation show common navigation.
+	<ul>
+		<li>Top anchor</li>
+		<li>Home</li>
+		<li>Follow me on tweeter</li>
+		<li>Share and connect with facebook</li>
+		<li>Bottom anchor</li>
+	</ul>
+	</p>
+]]></description>
+	
+    <files>
+        <filename module="mod_sidebar">mod_sidebar.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>        
+    </files>     
+
+	<media destination="mod_sidebar">  
+		<filename>index.html</filename>  
+		<folder>assets</folder>	
+	</media>       
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="pagetop" type="text" default="top" 
+					label="Page Top ID" 
+					description="Type page top anchor according to your template." />	
+				<field name="pagebottom" type="text" default="bottom" 
+					label="Page Bottom ID" 
+					description="Type page bottom anchor according to your template." />	
+				<field name="home" type="text" default="/" 
+					label="Home" 
+					description="Type index page address." />	
+				<field name="tweeter" type="text" default="http://twitter.com/"
+					label="Follow on Twitter" 
+					description="Follow me link address." />	
+				<field name="facebook" type="text" default="http://facebook.com/"
+					label="Facebook" 
+					description="Connect and share with the people." />		
+			</fieldset>
+		</fields>
+	</config>		
+</extension>

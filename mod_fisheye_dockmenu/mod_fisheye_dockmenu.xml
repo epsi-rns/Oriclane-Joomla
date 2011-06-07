@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="1.6.0" client ="site" method="upgrade">
+    <name>Fish Eye - Dock Menu</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2009 10 3</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->	
+	<description><![CDATA[
+	Fish Eye Dock Menu for Mootools 1.3.<br/>
+	I'm not an icon designer and icons in this module is not mine. If you feel unhappy with these limited icons.
+	You can find additional icon images from 
+	<a href="http://extensions.joomla.org/extensions/structure-a-navigation/menu-systems/fisheye-a-carousel-menus">
+	other extensions</a>.
+]]></description>	
+	
+     <files>
+        <filename module="mod_fisheye_dockmenu">mod_fisheye_dockmenu.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+     </files>
+     
+	<media destination="mod_fisheye_dockmenu">  
+		<filename>index.html</filename>  
+		<folder>images</folder>  
+		<folder>assets</folder>	
+	</media>       
+
+	<config>
+	<fields name="params">
+	<fieldset name="menu1" label="COM_CONTENT_MENU1_FIELDSET_LABEL">
+		<field name="menu1_status" type="radio" default="1" 
+		label="Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</field>	
+		<field name="menu1_url" type="text" default="http://www.iluni.org" 
+		label="URL" description="Type an url here, eg.http://www.joomla.org" />
+		<field name="menu1_img" type="imagelist" 
+		directory="/media/mod_fisheye_dockmenu/images" default="i-home.png" 
+		label="Image" description="Image for Menu" />
+		<field name="menu1_txt" type="text" default="Home" 
+		label="Text" description="Type your menu text here, eg.Home " />
+	</fieldset>
+	
+	<fieldset name="menu2" label="COM_CONTENT_MENU2_FIELDSET_LABEL">
+		<field name="menu2_status" type="radio" default="1" 
+		label="Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</field>	
+		<field name="menu2_url" type="text" default="http://www.iluni.org" 
+		label="URL" description="Type an url here, eg.http://www.joomla.org" />
+		<field name="menu2_img" type="imagelist" 
+		directory="/media/mod_fisheye_dockmenu/images" default="i-mail.png" 
+		label="Image" description="Image for Menu" />
+		<field name="menu2_txt" type="text" default="Mail" 
+		label="Text" description="Type your menu text here, eg.Home " />
+	</fieldset>
+	
+	<fieldset name="menu3" label="COM_CONTENT_MENU3_FIELDSET_LABEL">
+		<field name="menu3_status" type="radio" default="1" 
+		label="Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</field>	
+		<field name="menu3_url" type="text" default="http://www.iluni.org" 
+		label="URL" description="Type an url here, eg.http://www.joomla.org" />
+		<field name="menu3_img" type="imagelist" 
+		directory="/media/mod_fisheye_dockmenu/images" default="i-movie.png" 
+		label="Image" description="Image for Menu" />
+		<field name="menu3_txt" type="text" default="Video" 
+		label="Text" description="Type your menu text here, eg.Home " />	
+	</fieldset>
+	
+	<fieldset name="menu4" label="COM_CONTENT_MENU4_FIELDSET_LABEL">
+		<field name="menu4_status" type="radio" default="1" 
+		label="Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</field>	
+		<field name="menu4_url" type="text" default="http://www.iluni.org" 
+		label="URL" description="Type an url here, eg.http://www.joomla.org" />
+		<field name="menu4_img" type="imagelist" 
+		directory="/media/mod_fisheye_dockmenu/images" default="i-photo.png" 
+		label="Image" description="Image for Menu" />
+		<field name="menu4_txt" type="text" default="Photo" 
+		label="Text" description="Type your menu text here, eg.Home " />
+	</fieldset>
+	</fields>
+	</config>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_fisheye_dockmenu.ini</language>
+	</languages>
+	
+</extension>

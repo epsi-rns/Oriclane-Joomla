@@ -1,0 +1,65 @@
+.accordion .section:hover {
+	text-shadow: 3px 3px 5px #888;
+}
+
+
+.accordion h3.parent,
+.accordion h4.parent,
+.accordion h4.section,
+.accordion h4.activesection {
+	padding-left: 28px; 
+	margin-right: 28px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.accordion h5.section,
+.accordion h5.activesection {
+	padding-left: 40px; 
+	margin-right: 40px;
+	line-height: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;	
+}
+
+.accordion h3.parent,
+.accordion h4.parent {
+	background: url(../images/arrows-expand/lime.gif) no-repeat left; 
+	color: #000;
+}
+
+.accordion h4.section {
+	background: url(../images/arrows-collapse/green.gif) no-repeat left; 
+	color: #000;
+}
+
+.accordion h4.activesection {
+	background: url(../images/arrows-expand/web2orange.gif) no-repeat left; 
+	color: #0af;
+}
+
+.accordion h5.section {
+	background: url(../images/arrows-collapse/blueshape.gif) no-repeat 10px; 
+	color: #000;
+}
+
+.accordion h5.activesection {
+	background: url(../images/arrows-expand/orange.gif) no-repeat 10px; 
+	color: #0af;
+}
+
+.accordion table th { 
+	min-width: 200px; 
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.accordion div.acdn_element {
+	padding-left: 10px;
+}
+
+.accordion th, .accordion th {
+	font-size: 12px;
+}
+
+div#lay_main .accordion p { margin: 0; }

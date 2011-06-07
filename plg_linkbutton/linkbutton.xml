@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="content" method="upgrade">
+	<name>Content - Link Button</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2011 06 07</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[
+	<p>Just display simple download button with fancy button.<br/>
+	Note: for use with oriclone theme generic button.</p>
+	<ul>
+		<lh>Sample:</lh>
+		<li>{linkbutton type="powerpoint" <br/>
+		href="https://docs.google.com/uc?id=0B-JtBDLaFw8hYWNlMDBlNWYtMjVmYi00N2Q5LTgwNDQtODI4MDkyN2UwNDE0&amp;export=download&amp;hl=en_US" }</li>
+	</ul>
+	<ul>
+		<lh>Parameter:</lh>
+		<li>type: compressed, word, excel, powerpoint.</li>
+		<li>text: Text, like download or something.</li>
+		<li>href: an URL link reference</li>
+	</ul>
+]]></description>			
+
+	<files>
+		<filename plugin="linkbutton">linkbutton.php</filename>
+	</files>
+	
+	<media>  
+		<filename>libraries/css/linkbutton.css</filename>
+		<filename>libraries/images/silk/attach.png</filename>
+		<filename>libraries/images/silk/page_white_compressed.png</filename>
+		<filename>libraries/images/silk/page_white_excel.png</filename>
+		<filename>libraries/images/silk/page_white_powerpoint.png</filename>
+		<filename>libraries/images/silk/page_white_word.png</filename>
+	</media>  			
+</extension>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Mootools - Simple Slide Show</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2009 12 23</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[
+	<p>simple slide show for Mootools 1.3. A very simple minimalist one.</p>
+	<p>Sample {simpleslideshow path="iluni-ft-mab" 
+		images="bareng.jpeg, beasiswa.jpeg, beasiswa2.jpeg, bsab.jpeg, mhs.jpeg, pengurus.jpeg, plakat.jpeg, tks.jpeg, tks1.jpeg"}</p>
+	<ul>
+		<li>Path: image path relative to /media/user/images</li>		
+		<li>Images: contain array images.</li>		
+	</ul>
+]]></description>			
+
+	<files>
+		<filename plugin="simpleslideshow">simpleslideshow.php</filename>
+	</files>
+	
+	<media>  
+		<filename>libraries/js/moohelper.simpleslideshow.js</filename>
+	</media>	
+</extension>

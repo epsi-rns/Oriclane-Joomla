@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="content" method="upgrade">
+	<name>Mootools - Kwicks Menu</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2009 11 03</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.2.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[
+	<p>kwicks menu for Mootools 1.3.</p>
+	<p>Sample {kwicks ref="http://iluni.org" images="budaya.jpg, sejarah.jpg, pemandangan.jpg, alumni.jpg" path="kwicks"}</p>
+	<ul>
+		<li>Ref: URL for all images.</li>
+		<li>Images: should contain 4 images.</li>
+		<li>Path: image path relative to /media/user/images</li>		
+	</ul>
+]]></description>			
+
+	<files>
+		<filename plugin="kwicks">kwicks.php</filename>
+	</files>
+
+	<media>  
+		<filename>libraries/js/mooclass.kwicks.js</filename>
+	</media>
+</extension>

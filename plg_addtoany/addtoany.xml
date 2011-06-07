@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="content" method="upgrade">
+	<name>Content - AddToAny</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2011 06 01</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[
+	<p><a href="http://www.addtoany.com/">AddToAny</a>: Share/Bookmark/Email Button Wrapper</p>
+	<p>Help people share, bookmark, and email your posts & pages using any service, such as Facebook, Twitter, Google Buzz, Digg and many more.</p>
+]]></description>			
+
+	<files>
+		<filename plugin="addtoany">addtoany.php</filename>
+		<filename plugin="addtoany">addtoany.tmpl.php</filename>
+	</files>
+	
+	<media destination="plg_addtoany">  
+		<filename>index.html</filename>  
+		<folder>images</folder>	
+	</media>       
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_addtoany.ini</language>
+	</languages>
+
+	<config>
+	<fields name="params">
+	<fieldset name="placement" label="Placement">
+		<field name="position" type="list" default="1" 
+		label="Position" description="Show before or after article">
+			<option value="0">Display before top of article</option>
+			<option value="1">Display after bottom of article</option>
+		</field>			
+		<field name="show_at" type="checkboxes" multiple="yes" 
+			label="Show at" description="Which view to display">
+			<option value="article">Single Article</option>
+			<option value="featured">Featured Article</option>
+			<option value="category">Category Article</option>
+		</field>
+		<field name="button" type="imagelist" 
+			directory="/media/plg_addtoany/images/buttons"
+			default="share_save_171_16.png" 
+			label="Button" description="Select button type to display" />
+		<field name="title" type="text" default="Share/Bookmark"
+			label="Text Title" />	
+	</fieldset>
+	</fields>
+	</config>
+	
+			
+</extension>

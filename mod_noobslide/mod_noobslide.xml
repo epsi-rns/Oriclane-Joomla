@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5.0" method="upgrade">
+    <name>Mootools - noobSlide</name>
+	<!-- The following elements are optional and free of formatting constraints -->	
+	<creationDate>2009 10 3</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+	<copyright>This module its released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+    <version>0.2.0</version>
+	<!-- The description is optional and defaults to the name -->	
+	<description><![CDATA[
+	<p>noobSlider for Mootools 1.2.</p>
+	<p>This module is only a plugin wrapper.</p>
+	<p>Module parameter is self explanatory.</p>
+]]></description>
+	
+    <files>
+        <filename module="mod_noobslide">mod_noobslide.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>     
+	
+	<params>
+		<param name="@spacer" type="spacer" default="Adapter" />
+		<param name="adapter" type="radio" default="0" 
+		label="Data Source" description="Select Adapter Type">
+			<option value="0">Picasa</option>
+			<option value="1">Javascript Data</option>
+		</param>		
+	
+		<param name="@spacer" type="spacer" default="Picasa" />	
+		<param name="picasa_user" type="text" default="iluni.pusat" 
+		label="User" description="Type picasa user here." />
+		<param name="picasa_album" type="text" default="GempaSumatraBarat" 
+		label="Album" description="Type picasa album here." />		
+		
+		<param name="@spacer" type="spacer" default="Javascript Data" />	
+		<param name="jsdata" type="filelist" default="" 
+		label="Select a file" description="" 
+		directory="media/user/js/" 
+		filter="^data\.(.*)\.js$" exclude="" stripext="" />
+
+		<param name="@spacer" type="spacer" default="Information" />
+		<param name="title" type="text" default="Gempa Sumatra Barat" 
+		label="Title" description="Type title header information here." />
+		<param name="subtitle" type="text" size="25"
+		default="&lt;strong&gt;Sumber&lt;/strong&gt;: Aswil Nazir, 3 Oktober 2009" 
+		label="Subtitle" description="Type subtitle header information here." />
+	</params>
+</install>
