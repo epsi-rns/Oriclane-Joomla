@@ -1,7 +1,7 @@
 Original Clan Joomla Extension
-=====================
+==============================
 
-This is just a collection of Joomla extensions.
+Oriclane is just a collection of Joomla extensions.
 For learning purpose so others may have sample
 and speed up their development process.
 
