@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="1.6.0" type="plugin" group="content" method="upgrade">
-	<name>Mootools - Twitter Gitter</name>
-	<!-- The following elements are optional and free of formatting constraints -->	
-	<creationDate>2009 10 31</creationDate>
+    <name>Mootools - Twitter Gitter</name>
+    <!-- The following elements are optional and free of formatting constraints -->
+    <creationDate>2009 10 31</creationDate>
     <author>E.R. Nurwijayadi</author>
     <authorEmail>epsi.rns@gmail.com</authorEmail>
     <authorUrl>www [dot] net</authorUrl>
-	<copyright>This module its released under GNU/GPL license</copyright>
-	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<!--  The version string is recorded in the components table -->
+    <copyright>This module its released under GNU/GPL license</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <!--  The version string is recorded in the components table -->
     <version>0.1.0</version>
-	<!-- The description is optional and defaults to the name -->	
-	<description><![CDATA[
-	<p>Just another twitter grabber.</p>
-	<p>Simply put tweeter usernames in plugin paramater.</p>
-	<ul>
-		<li>{twittergitter usernames="mootools, joomla"}</li>
-		<li>{twittergitter username="mootools"}</li>
-		<li>{twittergitter random="mootools, joomla"}</li>
-	</ul>	
-]]></description>	
+    <!-- The description is optional and defaults to the name -->
+    <description><![CDATA[
+    <p>Just another twitter grabber.</p>
+    <p>Simply put tweeter usernames in plugin paramater.</p>
+    <ul>
+        <li>{twittergitter usernames="mootools, joomla"}</li>
+        <li>{twittergitter username="mootools"}</li>
+        <li>{twittergitter random="mootools, joomla"}</li>
+        <li>{twittergitter autos}</li>
+        <li>{twittergitter auto}</li>
+    </ul>
+]]></description>
 
-	<files>
-		<filename plugin="twittergitter">twittergitter.php</filename>
-	</files>
-	<media>  
-		<filename>libraries/js/moohelper.tweeter.js</filename>
-		<filename>libraries/css/tweeter.css</filename>
-	</media>  
+    <files>
+        <filename plugin="twittergitter">twittergitter.php</filename>
+    </files>
+    <media>
+        <filename>libraries/js/moohelper.tweeter.js</filename>
+        <filename>libraries/css/tweeter.css</filename>
+    </media>
 </extension>

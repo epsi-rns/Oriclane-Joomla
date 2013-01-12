@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="1.6.0" type="plugin" group="content" method="upgrade">
-	<name>Content - Google Presentation</name>
-	<!-- The following elements are optional and free of formatting constraints -->	
-	<creationDate>2011 06 07</creationDate>
+    <name>Content - Google Presentation</name>
+    <!-- The following elements are optional and free of formatting constraints -->
+    <creationDate>2011 06 07</creationDate>
     <author>E.R. Nurwijayadi</author>
     <authorEmail>epsi.rns@gmail.com</authorEmail>
     <authorUrl>www [dot] net</authorUrl>
-	<copyright>This module its released under GNU/GPL license</copyright>
-	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<!--  The version string is recorded in the components table -->
+    <copyright>This module its released under GNU/GPL license</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <!--  The version string is recorded in the components table -->
     <version>0.1.0</version>
-	<!-- The description is optional and defaults to the name -->
-	<description><![CDATA[
-	<p>You can add Google Docs Presentation in your posts.<br/>
-	This is just a simplified partial port from: http://www.omerucel.com/gunluk/2009/08/11/google-presentation/.</p>
-	<ul>
-		<lh>Sample:</lh>
-		<li>{presentation id="df2gk8cb_73mqr35tj" }</li>
-	</ul>
-]]></description>			
+    <!-- The description is optional and defaults to the name -->
+    <description><![CDATA[
+    <p>You can add Google Docs Presentation in your posts.<br/>
+    This is just a simplified partial port from: http://www.omerucel.com/gunluk/2009/08/11/google-presentation/.</p>
+    <ul>
+        <lh>Sample:</lh>
+        <li>{presentation id2="1yCsyEicq9xBKD4l0thyZ7lG2ZPMefQugk7uiM09w4es" }</li>
+        <li>{presentation id="df2gk8cb_73mqr35tj" }</li>
+    </ul>
+]]></description>
 
-	<files>
-		<filename plugin="googlepresentation">googlepresentation.php</filename>
-	</files>  			
+    <files>
+        <filename plugin="googlepresentation">googlepresentation.php</filename>
+    </files>
 </extension>

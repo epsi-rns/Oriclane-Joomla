@@ -34,7 +34,7 @@ class plgContentKwicks extends JPlugin
  			$this->process( $article, $match);
 		
   		// removes tags without matching module positions
-		$row->text = preg_replace( $regex, '', $article->text );		
+		$article->text = preg_replace( $regex, '', $article->text );		
 	}
 	
 	function initAssets()

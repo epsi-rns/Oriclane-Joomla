@@ -96,8 +96,22 @@ class plgContentNoobSlide extends JPlugin
 		JHTML::_('script', 'moohelper.noob.js', $assets.'js/');		
 	}	
 	
+	
+	function initAssetsHorz()
+	{
+		$document	= & JFactory::getDocument();	
+		$style = '
+.noob_mask img {	height:240px;	}';
+		$document->addStyleDeclaration($style);
+	}
+	
+	
 	function process( &$row, &$match )
 	{
+		//	box=true
+		if (preg_match('/box="(.*?)"/', $match[1], $value)) 
+			$this->initAssetsHorz();
+		
 		// picasa mode	
 		$picasa_user ='';	
 		if (preg_match('/picasa_user="(.*?)"/', $match[1], $value)) 
