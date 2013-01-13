@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="2.5.0" client ="site" method="upgrade">
+    <name>mod_articles_related</name>
+    <!-- The following elements are optional and free of formatting constraints -->
+    <creationDate>2013 01 13</creationDate>
+    <author>E.R. Nurwijayadi</author>
+    <authorEmail>epsi.rns@gmail.com</authorEmail>
+    <authorUrl>www [dot] net</authorUrl>
+    <copyright>This module its released under GNU/GPL license</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <!--  The version string is recorded in the components table -->
+    <version>0.1.0</version>
+    <!-- The description is optional and defaults to the name -->
+    <description><![CDATA[
+This module displays a list of related articles from its categories.
+]]></description>
+
+     <files>
+        <filename module="mod_articles_related">mod_articles_related.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+     </files>
+
+
+    <languages folder="lang">
+        <language tag="en-GB">en-GB.mod_articles_related.sys.ini</language>
+    </languages>
+</extension>

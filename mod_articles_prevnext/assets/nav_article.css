@@ -1,0 +1,120 @@
+div#box_prev,
+div#box_next {
+    position: absolute;
+    z-index: 110;
+    top: 250px;
+    height: 60px;
+
+    overflow: hidden;
+}
+
+div#box_prev {
+    left: 0px;
+    width: 200px;
+    padding-right: 10px;
+}
+div#box_next {
+    right: 0px;
+    width: 20px;
+    padding-left: 10px;
+}
+
+div#article_prev,
+div#article_next {
+    position: relative;
+    height: 48px;
+    width: 200px;
+
+    border: 1px solid yellow;
+    background: #ccc;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+
+    border-top: 1px solid #88f;
+    border-bottom: 1px solid #88f;
+
+    -moz-box-shadow: #888 3px 3px 5px;
+    -webkit-box-shadow: #888 3px 3px 5px;
+    box-shadow: 3px 3px 5px #888;
+}
+
+div#article_prev_text a,
+div#article_next_text a,
+div#article_prev_text a:visited,
+div#article_next_text a:visited,
+div#article_prev_text a:link,
+div#article_next_text a:link {
+    color: black;
+}
+
+div#article_prev {
+    right: 10px;
+    margin-left: -183px;
+    border-right : 3px solid #dd6;
+
+    border-top-right-radius:  20px;
+    border-bottom-right-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-topright:  20px;
+    -moz-border-radius-bottomright: 20px;
+}
+
+div#article_next {
+    left: 10px;
+    /* margin-right: -190px; */
+    border-left : 3px solid #dd6;
+
+    border-top-left-radius:  20px;
+    border-bottom-left-radius: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft:  20px;
+    -moz-border-radius-bottomleft: 20px;
+}
+
+div#article_prev_image,
+div#article_next_image {
+    height: 48px;
+    width: 48px;
+}
+
+div#article_prev_image {
+    background: url(nav-prev.png) top left no-repeat;
+    float: right;
+    right: 0px;
+}
+
+div#article_next_image {
+    background: url(nav-next.png) top left no-repeat;
+    float: left;
+    left: 0px;
+}
+
+div#article_prev_text {
+    float: left;
+    text-align: left;
+    right: 50px;
+    margin: 4px 5px 4px 25px;
+}
+
+div#article_next_text {
+    float: right;
+    text-align: right;
+    left: 50px;
+    margin: 4px 27px 4px 5px;
+}
+
+div#article_prev_text,
+div#article_next_text {
+    height: 44px;
+    width: 120px;
+
+    overflow: hidden;
+}
+
+div#article_prev_text:hover,
+div#article_next_text:hover {
+    text-shadow: 10px 10px 5px #888;
+}
+

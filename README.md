@@ -6,7 +6,7 @@ For learning purpose so others may have sample
 and speed up their development process.
 
 ## Goal
-I'm using it for iluni.org.
+I'm using it for iluni.net.
 
 
 Related Link
